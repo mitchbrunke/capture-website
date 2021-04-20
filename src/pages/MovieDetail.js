@@ -31,6 +31,9 @@ const MovieDetail = () => {
               />
             ))}
           </Awards>
+          <ImageDisplay>
+            <img src={movie.secondaryImg} alt="movie" />
+          </ImageDisplay>
         </Details>
       )}
     </>
@@ -83,6 +86,14 @@ const AwardStyle = styled.div`
   }
   p {
     padding: 2rem 0rem;
+  }
+`;
+
+const ImageDisplay = styled.div`
+  min-height: 50vh;
+  img {
+    width: 100%;
+    height: 100vh;
   }
 `;
 
